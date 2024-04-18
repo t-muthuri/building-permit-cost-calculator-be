@@ -5,6 +5,8 @@ Building plans approval application with ReactJs and Python
 Django
 
 # to do
-* [] Authorization
+* [] Authorization - two users (client, the county approver)
 * [] Models - related to uploading documents for approval feature
-* [] Set up the backend
+* [x] Set up the backend
+* [] Approvals cost calculator
+* [] Scrape building construction articles (AAK, NCA)
