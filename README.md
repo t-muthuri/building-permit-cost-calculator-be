@@ -1,15 +1,13 @@
 # building-plans-approvals-be
 Building plans approval application with ReactJs and Python
 
+# about
+
+
 # prerequisites
 Django
+MySQL db
 
-# to do
-* [] Authorization - two users (client, the county approver)
-* [] Models - related to uploading documents for approval feature
-* [x] Set up the backend
-* [] Approvals cost calculator
-* [] Scrape building construction articles (AAK, NCA)
 
 # how to set up the application
 Clone the application from github
@@ -27,3 +25,20 @@ Install the app requirements
 Run the application
 
 ```python manage.py runserver```
+
+# features
+
+* [] Approvals cost calculator
+* [] Scrape building construction articles (AAK, NCA)
+* [] Upload documents for approval
+
+# usage
+# authors
+
+**Sharon Korir**
+- website
+- contact information
+
+**Tressie Muthuri**
+- website
+- contact information
