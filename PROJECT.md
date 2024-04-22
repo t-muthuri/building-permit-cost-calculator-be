@@ -8,3 +8,31 @@
 
 # to research on
 * [] setting up mysql and django
+
+# Notes
+[Setting up Docker and CircleCI](https://circleci.com/blog/continuous-integration-for-django-projects/)
+
+# project structure
+```
+└── 📁building-plans-approvals-be
+    └── LICENSE
+    └── PROJECT.md
+    └── README.md
+    └── 📁approvals
+        └── __init__.py
+        └── 📁__pycache__
+            └── ...
+        └── asgi.py
+        └── settings.py
+        └── urls.py
+        └── wsgi.py
+    └── 📁authorization
+        └── ...
+    └── 📁calc
+        └── ...
+    └── db.sqlite3
+    └── manage.py
+    └── requirements.txt
+    └── 📁venv
+        └── ...
+```
