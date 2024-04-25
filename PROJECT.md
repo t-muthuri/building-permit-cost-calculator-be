@@ -36,3 +36,15 @@
     └── 📁venv
         └── ...
 ```
+
+# available scripts
+
+```mysql -u root -p```
+
+```python manage.py makemigrations```
+
+```python manage.py migrate```
+
+
+# references
+- [working with mysql db](https://blog.devart.com/mysql-command-line-client.html#How-to-use-MySQL-command-line-client?)
