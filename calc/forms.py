@@ -26,3 +26,4 @@ class CalcForm(forms.Form):
     project_size = forms.FloatField(label="The size of your project")
     type_of_project = forms.CharField(label="Type of project")
     county = forms.CharField(label="County")
+    total_cost_of_construction_project = forms.FloatField()

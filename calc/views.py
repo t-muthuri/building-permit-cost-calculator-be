@@ -16,6 +16,7 @@ class Index(View):
             total_size = form.cleaned_data['project_size']
             project_type_charges = form.cleaned_data['type_of_project']
             county_charges = form.cleaned_data['county']
+            total_cost = form.cleaned_data['total_cost_of_construction_project']
 
             # calculate the total amount:
 
@@ -32,12 +33,24 @@ class Index(View):
                     # occupation certificate 5000
 
                 # nca levy 0.5% of the total cost of construction
+            
+            building_permit = ((total_size*21000) + 10800)
+
+            nca_levy = (0.005 * total_cost)
+
+            # use control flow to render results when the nca_levy is calculated and when it is omitted since it is an optional field
+            approvals_cost = ((total_size*21000) + 10800 + nca_levy)
                 
             # the rate is different for each project type
 
             # the rate is different in every county
 
-                
+            # create context
+            context = {
+                'approvals_cost': int(approvals_cost),
+                'nca_levy': int(nca_levy),
+                'building_permit': int(building_permit)
+            }
 
-
-
+        # render the template
+        return render(request, 'calc/result.html', context)
