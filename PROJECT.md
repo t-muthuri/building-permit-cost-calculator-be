@@ -7,11 +7,13 @@
 * [] Set up formatter for a homogenous code syntax
 * [] Calculate the cost of approvals in Nairobi county for a residential unit
 
+
 # to research on
 * [] setting up mysql and django
 
 # Notes
 [Setting up Docker and CircleCI](https://circleci.com/blog/continuous-integration-for-django-projects/)
+[Connect ReactJs and Django](https://medium.com/@devsumitg/how-to-connect-reactjs-django-framework-c5ba268cb8be)
 
 # project structure
 ```
