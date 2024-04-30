@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'calc',
     'rest_framework',
     'corsheaders',
+    'calculator'
   
 ]
 

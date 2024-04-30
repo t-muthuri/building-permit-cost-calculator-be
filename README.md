@@ -1,12 +1,64 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [building-plans-approvals-be](#building-plans-approvals-be)
+- [table of contents](#table-of-contents)
+- [about](#about)
+- [prerequisites](#prerequisites)
+- [project structure](#project-structure)
+- [available scripts](#available-scripts)
+- [how to set up the application](#how-to-set-up-the-application)
+- [features](#features)
+- [usage](#usage)
+- [authors](#authors)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # building-plans-approvals-be
 Building plans approval application with ReactJs and Python
 
-# about
+# table of contents
 
+
+# about
 
 # prerequisites
 Django
 MySQL db
+
+# project structure
+```
+└── 📁building-plans-approvals-be
+    └── LICENSE
+    └── PROJECT.md
+    └── README.md
+    └── 📁approvals
+        └── __init__.py
+        └── 📁__pycache__
+            └── ...
+        └── asgi.py
+        └── settings.py
+        └── urls.py
+        └── wsgi.py
+    └── 📁authorization
+        └── ...
+    └── 📁calc
+        └── ...
+    └── db.sqlite3
+    └── manage.py
+    └── requirements.txt
+    └── 📁venv
+        └── ...
+```
+
+# available scripts
+
+```mysql -u root -p```
+
+```python manage.py makemigrations```
+
+```python manage.py migrate```
 
 
 # how to set up the application

@@ -21,5 +21,6 @@ from calc.views import Index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Index.as_view(), name='index'),
-    path('api/', include('myapi.urls'))
+    path('api/', include('myapi.urls')),
+    path('api/', include('calculator.urls'))
 ]
