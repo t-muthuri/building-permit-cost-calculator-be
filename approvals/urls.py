@@ -16,11 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from calc.views import Index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Index.as_view(), name='index'),
-    path('api/', include('myapi.urls')),
     path('api/', include('calculator.urls'))
 ]
