@@ -91,6 +91,7 @@ Run the application
 * [] Set up circleci for tracking changes and deploying
 * [] Set up formatter for a homogenous code syntax
 * [] Calculate the cost of approvals in Nairobi county for a residential unit
+* [] set up an automated build server - research on how to do this first
 
 
 # To research on
