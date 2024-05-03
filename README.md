@@ -57,6 +57,8 @@ MySQL db
 
 ```python manage.py migrate```
 
+```python manage.py populate_counties```
+
 
 # How to set up the application
 Clone the application from github
