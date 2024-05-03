@@ -55,7 +55,15 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ORIGIN_WHITELIST = (
+    'http//:localhost:3000',
+)
+
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:3000",
+]
 
 ROOT_URLCONF = 'approvals.urls'
 
@@ -88,6 +96,8 @@ DATABASES = {
         'USER': 'root', # db admin
         'PASSWORD': 'admin2024', 
         'HOST': '127.0.0.1',
+        # 'PASSWORD': 'password', 
+        # 'HOST': 'localhost',
         'PORT':'3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
