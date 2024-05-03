@@ -80,6 +80,7 @@ Run the application
 * [] Approvals cost calculator
 * [] Scrape building construction articles (AAK, NCA)
 * [] Upload documents for approval
+* [] Materials cost calculator
 
 # Usage
 
@@ -92,6 +93,7 @@ Run the application
 * [] Set up formatter for a homogenous code syntax
 * [] Calculate the cost of approvals in Nairobi county for a residential unit
 * [] set up an automated build server - research on how to do this first
+ *[] Estimate the cost of materials needed for a simple one bedroom house in Kenya - post the quantities with estimated prices (table)
 
 
 # To research on
