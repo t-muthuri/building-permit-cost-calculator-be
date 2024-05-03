@@ -1,0 +1,10 @@
+# Compiled Python bytecode
+__pycache__/
+*.pyc
+
+# Environment and database
+.env
+db.sqlite3
+
+# Virtual environment
+/venv
