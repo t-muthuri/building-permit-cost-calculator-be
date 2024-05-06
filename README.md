@@ -59,23 +59,25 @@ MySQL db
 
 ```python manage.py populate_counties```
 
+### `python manage.py migrate <Django app name> zero`
+Rollback migrations.\
+Replace with the actual name of the Django app
+
 
 # How to set up the application
+
+### `git clone url`
 Clone the application from github
 
-```git clone url```
-
+### `source venv/bin/activate`
 Activate your virtual environment
 
-```source venv/bin/activate```
-
+### `pip install -r requirements.txt`
 Install the app requirements
 
-```pip install -r requirements.txt```
-
+### `python manage.py runserver`
 Run the application
 
-```python manage.py runserver```
 
 # Features
 
