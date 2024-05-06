@@ -110,6 +110,7 @@ Run the application
 - [working with mysql db](https://blog.devart.com/mysql-command-line-client.html#How-to-use-MySQL-command-line-client?)
 
 # Overview of the project
+- Obtaining a [building permit](https://buildhub.aak.or.ke/approval)
 - Building approvals in Kenya vary based on factors like project type, size, estimated expenses, and location. Counties operate their own system for reviewing and [granting permits](https://www.buyrentkenya.com/discover/step-by-step-process-of-obtaining-building-permits-in-kenya#:~:text=There%20are%20four%20mandatory%20construction,EIA%20license%2FNEMA%20approval), adding complexity to the process.
 - Construction approvals' procedures, regulations, and associated costs vary significantly depending on factors such as the type of structure, its size, estimated expenses, and its geographical location.
 - There are four mandatory construction approvals in Kenya:
@@ -119,8 +120,6 @@ Run the application
     - NCA project registration
 
 - This list is not exhaustive but represents the standard prerequisites for most building developments across Kenyan counties before construction begins.
-
-- [Nairobi County Approvals](https://integrum.co.ke/construction-permits-in-kenya-nairobi-building-approval-costs/#Building_Approval_Costs_In_Nairobi)
 
 # Authors
 
