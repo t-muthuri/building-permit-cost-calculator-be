@@ -13,6 +13,3 @@ class County(models.Model):
   
   def __str__(self):
         return self.county_name
-
-
-  

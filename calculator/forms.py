@@ -1,4 +1,4 @@
-# from django import forms
+from django import forms
 
 # # PROJECT_CHOICES = {
 # #     "Residential": "Residential",
@@ -21,9 +21,9 @@
 # #     "10": "Marsabit",
 # #     }
 
-# class CalculatorForm(forms.Form):
-#     # instance variables mapping the labels
-#     project_size = forms.FloatField(label="The size of your project")
-#     type_of_project = forms.CharField(label="Type of project")
-#     county = forms.CharField(label="County")
-#     total_cost_of_construction_project = forms.FloatField()
+class CalculatorForm(forms.Form):
+    # instance variables mapping the labels
+    project_size = forms.FloatField(label="The size of your project")
+    type_of_project = forms.CharField(label="Type of project")
+    county = forms.CharField(label="County")
+    total_cost_of_construction_project = forms.FloatField()
