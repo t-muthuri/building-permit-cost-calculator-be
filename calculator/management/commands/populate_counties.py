@@ -1,61 +1,120 @@
 from django.core.management.base import BaseCommand
-from calculator.models import County
+from calculator.models import County, ProjectType
 
 class Command(BaseCommand):
-    help = 'Populates the County model with data'
+    help = 'Populates the County and ProjectType models with data'
 
-    def handle(self, *args, **options):   
+    def handle(self, *args, **options):
+      
         # alphabetical list to make it easier for a client to find their county - improve ui
-        # these price values are for residential projects only
-        county_data = {
-          "001": {"name": "Baringo", "price": 30},
-          "002": {"name": "Bomet", "price": 15}, # est
-          "003": {"name": "Bungoma", "price": 10}, # est
-          "004": {"name": "Busia", "price": 10}, #est
-          "005": {"name": "Elgeyo-Marakwet", "price": 10}, #est
-          "006": {"name": "Embu", "price": 10}, #est
-          "007": {"name": "Garissa", "price": 5}, # est
-          "008": {"name": "Homa Bay", "price": 5}, # est
-          "009": {"name": "Isiolo", "price": 10}, # est
-          "010": {"name": "Kajiado", "price": 5}, # est
-          "011": {"name": "Kakamega", "price": 10}, # est
-          "012": {"name": "Kericho", "price": 10}, # est
-          "013": {"name": "Kiambu", "price": 50}, # est
-          "014": {"name": "Kilifi", "price": 30},
-          "015": {"name": "Kirinyaga", "price": 7}, # est
-          "016": {"name": "Kisii", "price": 20},
-          "017": {"name": "Kisumu", "price": 10}, # est
-          "018": {"name": "Kitui", "price": 10}, # est
-          "019": {"name": "Kwale", "price": 10}, # est
-          "020": {"name": "Laikipia", "price": 50},
-          "021": {"name": "Lamu", "price": 12}, # est
-          "022": {"name": "Machakos", "price": 25},
-          "023": {"name": "Makueni", "price": 10}, # est
-          "024": {"name": "Mandera", "price": 10}, # est
-          "025": {"name": "Marsabit", "price": 10}, # est
-          "026": {"name": "Meru", "price": 15}, # est
-          "027": {"name": "Migori", "price": 10}, # est
-          "028": {"name": "Mombasa", "price": 10}, # est
-          "029": {"name": "Murang'a", "price": 10}, # est
-          "030": {"name": "Nairobi", "price": 50}, # est
-          "031": {"name": "Nakuru", "price": 30}, 
-          "032": {"name": "Nandi", "price": 10}, # est
-          "033": {"name": "Narok", "price": 7}, # est
-          "034": {"name": "Nyamira", "price": 10}, # est
-          "035": {"name": "Nyandarua", "price": 15}, 
-          "036": {"name": "Nyeri", "price": 7}, # est
-          "037": {"name": "Samburu", "price": 10}, # est
-          "038": {"name": "Siaya", "price": 30},
-          "039": {"name": "Taita-Taveta", "price": 30},
-          "040": {"name": "Tana River", "price": 10}, # est
-          "041": {"name": "Tharaka-Nithi", "price": 10}, # est
-          "042": {"name": "Trans-Nzoia", "price": 15}, # est
-          "043": {"name": "Turkana", "price": 10}, # est
-          "044": {"name": "Uasin Gishu", "price": 25},
-          "045": {"name": "Vihiga", "price": 10}, # est
-          "046": {"name": "Wajir", "price": 5},
-          "047": {"name": "West Pokot", "price": 40},
-          }
-        for county_no, data in county_data.items():
-            County.objects.create(county_no=int(county_no), county_name=data["name"], county_price=data["price"])
+        # these price values are for a few counties only - those indicated in the AAK Building permits page
+        # add alteration and addition of approved plan cost
+        # "Customization of drawing for ABT": 5000 per plan
         
+        county_data = {
+          "001": {
+            "Baringo": {
+              "Commercial": 60,
+              "Residential": 30,
+              "Residential-Commercial": 30, # est
+              "Hospitals": 50, # est
+              "Educational": 20,
+              "Greenhouse": 3,
+              "Religious": 20,
+              "Industrial": 70,
+              "Solar plants": 5, # est
+              "Petrol station": 100,
+              "Go downs": 100, # est
+            }
+          },
+          "002": {
+            "Kilifi": 30
+          },
+          "003": {
+            "Kisii": {
+              "Commercial": 60,
+              "Residential": 20,
+              "Residential-Commercial": 30,
+              "Hospitals": 50,
+              "Educational": 25,
+              "Greenhouse": 5,
+              "Religious": 20, # est - calculation to be done is 50% of plinth area
+              "Industrial": 65,
+              "Solar plants": 5, # est
+              "Petrol station": 110,
+              "Go downs": 100,
+            }
+          },
+          "004": {
+            "Laikipia": {
+              "Commercial": 75,
+              "Residential": 50,
+              "Residential-Commercial": 50, # est
+              "Hospitals": 50, # est
+              "Educational": 30,
+              "Greenhouse": 10,
+              "Religious": 10,
+              "Industrial": 70,
+              "Solar plants": 5, # calculated value from 20,000 per acre
+              "Petrol station": 100,
+              "Go downs": 100, # est
+            }
+          },
+          "005": {
+            "Nakuru": {
+              "Commercial": 60,
+              "Residential": 30,
+              "Residential-Commercial": 50, # est
+              "Hospitals": 50, # est
+              "Educational": 20,
+              "Greenhouse": 3,
+              "Religious": 20,
+              "Industrial": 70,
+              "Solar plants": 5, # est
+              "Petrol station": 100,
+              "Go downs": 100, # est
+            }
+          },
+          "006": {
+            "Taita-Taveta": {
+              "Commercial": 40,
+              "Residential": 30,
+              "Residential-Commercial": 50, # est
+              "Hospitals": 50, # est
+              "Educational": 20,
+              "Greenhouse": 10,
+              "Religious": 20,
+              "Industrial": 50,
+              "Solar plants": 5, # est
+              "Petrol station": 100,
+              "Go downs": 100, # est
+            }
+          },
+          "007": {
+            "West-Pokot": {
+              "Commercial": 45,
+              "Residential": 40,
+              "Residential-Commercial": 50, # est
+              "Hospitals": 50, # est
+              "Educational": 40,
+              "Greenhouse": 5, # est
+              "Religious": 40,
+              "Industrial": 45,
+              "Solar plants": 5, # est
+              "Petrol station": 60,
+              "Go downs": 100, # est
+            }
+          },
+        }
+        
+        for county_no, county_data in county_data.items():
+            county_name = list(county_data.keys())[0]
+            county_instance = County.objects.create(county_no=county_no, county_name=county_name)
+            
+            if isinstance(county_data[county_name], int):  # If the value is an integer
+                continue  # Skip because there's no project data for this county
+            else:
+                for project_name, project_price in county_data[county_name].items():
+                    project_instance = ProjectType.objects.create(project_name=project_name, project_price=project_price, county=county_instance)
+
+        self.stdout.write(self.style.SUCCESS('Data populated successfully.'))

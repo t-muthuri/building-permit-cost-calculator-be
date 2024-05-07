@@ -1,8 +1,8 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from .models import County
-from .serializers import CountySerializer
+from .models import County, ProjectType
+from .serializers import CountySerializer, ProjectTypeSerializer
 
 # Create your views here.
 
@@ -19,5 +19,20 @@ def county_list(request):
     serializer = CountySerializer(counties, many=True)
     return Response(
         {"message": "Counties retrieved successfully", "results": serializer.data},
+        status=status.HTTP_200_OK,
+    )
+@api_view(['GET'])
+def project_type(request):
+    try:
+        projects = ProjectType.objects.all()
+        
+    except ProjectType.DoesNotExist:
+        return Response(
+            {"error": "There are no projects listed"},
+            status=status.HTTP_404_NOT_FOUND,
+        )
+    serializer = ProjectTypeSerializer(projects, many=True)
+    return Response(
+        {"message": "Projects retrieved succesfully", "results": serializer.data},
         status=status.HTTP_200_OK,
     )
