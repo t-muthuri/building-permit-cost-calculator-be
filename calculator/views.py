@@ -6,10 +6,11 @@ from .serializers import CountySerializer, ProjectTypeSerializer
 
 # Create your views here.
 
+
 @api_view(['GET'])
 def county_list(request):
     try:
-      counties = County.objects.all()
+        counties = County.objects.all()
 
     except County.DoesNotExist:
         return Response(
@@ -21,11 +22,13 @@ def county_list(request):
         {"message": "Counties retrieved successfully", "results": serializer.data},
         status=status.HTTP_200_OK,
     )
+
+
 @api_view(['GET'])
 def project_type_list(request):
     try:
         project_types = ProjectType.objects.all()
-        
+
     except ProjectType.DoesNotExist:
         return Response(
             {"error": "There are no projects listed"},

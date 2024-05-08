@@ -51,13 +51,13 @@ MySQL db
 
 # Available scripts
 
-```mysql -u root -p```
+### `mysql -u root -p`
 
-```python manage.py makemigrations```
+### `python manage.py makemigrations`
 
-```python manage.py migrate```
+### `python manage.py migrate`
 
-```python manage.py populate_counties```
+### `python manage.py populate_counties`
 
 ### `python manage.py migrate <Django app name> zero`
 Rollback migrations.\
@@ -77,6 +77,9 @@ Install the app requirements
 
 ### `python manage.py runserver`
 Run the application
+
+# Dependencies
+- [django-rest-framework-simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/getting_started.html)
 
 
 # Features
@@ -103,6 +106,7 @@ Run the application
 
 # To research on
 * [] setting up mysql and django
+* [] what is jazzmin
 
 # Notes
 [Setting up Docker and CircleCI](https://circleci.com/blog/continuous-integration-for-django-projects/)
