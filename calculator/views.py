@@ -6,7 +6,6 @@ from .serializers import CountySerializer, ProjectTypeSerializer
 
 # Create your views here.
 
-
 @api_view(['GET'])
 def county_list(request):
     try:
@@ -39,3 +38,23 @@ def project_type_list(request):
         {"message": "Projects retrieved succesfully", "results": serializer.data},
         status=status.HTTP_200_OK,
     )
+
+@api_view(['POST'])
+def calculate_cost(request):
+    if request.method == 'POST':
+        project_size = request.data.get('size')
+        county_no = request.data.get('county')
+        project_type_no = request.data.get('projectType')
+        construction_cost = request.data.get('cost')
+        
+        nca_levy = (0.005 * int(construction_cost))
+        
+        return Response(
+            {"message": "Approval cost calculated successfully!"},
+            status=status.HTTP_200_OK,
+        )
+    else:
+        return Response(
+            {"error": "Invalid request method"},
+            status=status.HTTP_405_METHOD_NOT_ALLOWED,
+        )

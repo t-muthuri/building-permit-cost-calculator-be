@@ -1,6 +1,5 @@
 from rest_framework import serializers
-from .models import County
-from .models import ProjectType
+from .models import County, ProjectType
 
 
 class CountySerializer(serializers.ModelSerializer):
@@ -13,3 +12,4 @@ class ProjectTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProjectType
         fields = ('project_type_name', 'project_type_no')
+        

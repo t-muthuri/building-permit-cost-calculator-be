@@ -97,11 +97,19 @@ Run the application
 * [x] Set up the backend
 * [x] Set up MySQL db ... confirm
 * [] Set up circleci for tracking changes and deploying
-* [] Set up formatter for a homogenous code syntax
-* [] Calculate the cost of approvals in Nairobi county for a residential unit
+* [x] Set up formatter for a homogenous code syntax - using autopep 8 extension atm
+* [] Set up files for formatting the code syntax
+* [x] Calculate the cost of approvals in Nairobi county for a residential unit
+* [] use the county data to calculate cost of approvals successfully (rough estimate)
 * [] set up an automated build server - research on how to do this first
 * [] Estimate the cost of materials needed for a simple one bedroom house in Kenya - post the quantities with estimated prices (table)
 * [] thoroughly research on how you have populated the counties and project types and prices
+* [] Post data from the fe
+    * [x] Create django models
+    * [] Create django views to receive data from the fe (POST)
+    * [] Restful APIs for react to fetch and modify data
+    * [] Validation logic using serializers
+    * [] Handle errors gracefully and implement security measures
 
 
 # To research on
