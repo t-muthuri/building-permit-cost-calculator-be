@@ -97,7 +97,8 @@ Run the application
 * [] Set up formatter for a homogenous code syntax
 * [] Calculate the cost of approvals in Nairobi county for a residential unit
 * [] set up an automated build server - research on how to do this first
- *[] Estimate the cost of materials needed for a simple one bedroom house in Kenya - post the quantities with estimated prices (table)
+* [] Estimate the cost of materials needed for a simple one bedroom house in Kenya - post the quantities with estimated prices (table)
+* [] thoroughly research on how you have populated the counties and project types and prices
 
 
 # To research on

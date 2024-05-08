@@ -1,1 +1,2 @@
 from .populate_counties import Command as PopulateCountiesCommand
+from .populate_project_types import Command as PopulateProjectTypesCommand

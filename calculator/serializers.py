@@ -10,4 +10,4 @@ class CountySerializer(serializers.ModelSerializer):
 class ProjectTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProjectType
-        fields = ('county', 'project_name', 'project_price')
+        fields = ('project_type_name', 'project_type_no')

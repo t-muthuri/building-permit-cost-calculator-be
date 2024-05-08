@@ -22,16 +22,16 @@ def county_list(request):
         status=status.HTTP_200_OK,
     )
 @api_view(['GET'])
-def project_type(request):
+def project_type_list(request):
     try:
-        projects = ProjectType.objects.all()
+        project_types = ProjectType.objects.all()
         
     except ProjectType.DoesNotExist:
         return Response(
             {"error": "There are no projects listed"},
             status=status.HTTP_404_NOT_FOUND,
         )
-    serializer = ProjectTypeSerializer(projects, many=True)
+    serializer = ProjectTypeSerializer(project_types, many=True)
     return Response(
         {"message": "Projects retrieved succesfully", "results": serializer.data},
         status=status.HTTP_200_OK,

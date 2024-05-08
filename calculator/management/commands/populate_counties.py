@@ -1,8 +1,8 @@
 from django.core.management.base import BaseCommand
-from calculator.models import County, ProjectType
+from calculator.models import County
 
 class Command(BaseCommand):
-    help = 'Populates the County and ProjectType models with data'
+    help = 'Populates the County model with data'
 
     def handle(self, *args, **options):
       
@@ -108,13 +108,7 @@ class Command(BaseCommand):
         }
         
         for county_no, county_data in county_data.items():
-            county_name = list(county_data.keys())[0]
-            county_instance = County.objects.create(county_no=county_no, county_name=county_name)
-            
-            if isinstance(county_data[county_name], int):  # If the value is an integer
-                continue  # Skip because there's no project data for this county
-            else:
-                for project_name, project_price in county_data[county_name].items():
-                    project_instance = ProjectType.objects.create(project_name=project_name, project_price=project_price, county=county_instance)
-
-        self.stdout.write(self.style.SUCCESS('Data populated successfully.'))
+          
+          county_name = list(county_data.keys())[0]
+          County.objects.create(county_no=int(county_no), county_name=county_name)
+        self.stdout.write(self.style.SUCCESS('County data populated successfully.'))
