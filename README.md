@@ -104,12 +104,13 @@ Run the application
 * [] set up an automated build server - research on how to do this first
 * [] Estimate the cost of materials needed for a simple one bedroom house in Kenya - post the quantities with estimated prices (table)
 * [] thoroughly research on how you have populated the counties and project types and prices
-* [] Post data from the fe
+* [] Post calculator data from the fe
     * [x] Create django models
-    * [] Create django views to receive data from the fe (POST)
-    * [] Restful APIs for react to fetch and modify data
-    * [] Validation logic using serializers
-    * [] Handle errors gracefully and implement security measures
+    * [x] Create django views to receive data from the fe (POST)
+    * [x] Restful APIs for react to fetch and modify data
+    * [x] Validation logic using serializers
+    * [x] Handle errors gracefully 
+    * [] implement security measures
 
 
 # To research on
