@@ -137,6 +137,39 @@ Run the application
 
 - This list is not exhaustive but represents the standard prerequisites for most building developments across Kenyan counties before construction begins.
 
+**Documents Required**
+
+- Copy of ownership documents
+- Application for development permission (PPA 1 form) (original)
+- PPA1 payment receipt
+- Survey plan- from Survey Kenya
+- Rates clearance certificate(copy)
+- Architectural drawings 
+- Structural drawings 
+- Structural design calculations 
+- Official land search 
+- Architect's practicing certificate (copy)
+- Engineer's practicing certificate (copy)
+
+**Fees charged**
+
+* [x] Building approval application form – Kshs. 1,000
+* [x] Architectural plans (plinth area per m2)
+    Customization of drawing for ABT – Kshs. 5,000
+* [] Structural plans
+    Commercial – Kshs. 10,000
+    Residential – Kshs. 7,000
+    Industrial – Kshs. 20,000
+    Educational – Kshs. 5,000
+    Religious – Kshs. 2,500
+    Petrol station – Kshs. 10,000
+    Application fee for containers – Kshs. 20,000
+* [] Alteration of building plans – Kshs. 5,000
+* [x] Site board 
+    Application  – Kshs. 1,500
+    License fee  – Kshs. 15,000
+    
+
 # Authors
 
 **Sharon Korir**

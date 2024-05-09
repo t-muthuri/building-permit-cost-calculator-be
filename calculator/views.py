@@ -55,15 +55,18 @@ def calculate_cost(request):
             if county_item.get(county_name):
                 price = county_item[county_name].get(project_type_name)
                 if price is not None:
-                    nca_levy = (0.005 * int(construction_cost))
-                    cost_building = (int(project_size)) * price
-                    total_cost_approval = nca_levy + cost_building + 10800
-                    building_permit = cost_building + 10800
+                    
+                    application_form = 1000
+                    site_board_application = 1500
+                    site_board_license = 15000
+                    site_board = site_board_application + site_board_license
+                    
+                    arch_building_cost = (int(project_size)) * price
+                    building_permit_cost = arch_building_cost + application_form + site_board
 
                 context = {
-                    'total cost of approval': int(total_cost_approval),
-                    'nca-levy': int(nca_levy),
-                    'building permit': int(building_permit)
+                    'architectural plans cost': int(arch_building_cost),
+                    'total estimated cost for a building permit': int(building_permit_cost),
                 }
 
                 return Response(
