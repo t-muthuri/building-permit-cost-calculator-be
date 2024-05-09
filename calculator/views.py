@@ -50,17 +50,15 @@ def calculate_cost(request):
         project_type_name = request.data.get('projectType')
         construction_cost = request.data.get('cost')
 
-        nca_levy = (0.005 * int(construction_cost))
-
-        # total_cost = None
         for county_no, county_item in county_data.items():
             # Check if the county name exists in the current county_item
             if county_item.get(county_name):
                 price = county_item[county_name].get(project_type_name)
-
-                cost_building = (int(project_size)) * price
-                total_cost_approval = nca_levy + cost_building + 10800
-                building_permit = cost_building + 10800
+                if price is not None:
+                    nca_levy = (0.005 * int(construction_cost))
+                    cost_building = (int(project_size)) * price
+                    total_cost_approval = nca_levy + cost_building + 10800
+                    building_permit = cost_building + 10800
 
                 context = {
                     'total cost of approval': int(total_cost_approval),
@@ -68,10 +66,12 @@ def calculate_cost(request):
                     'building permit': int(building_permit)
                 }
 
-        return Response(
-            {"message": "Approval cost calculated successfully!", "context": context},
-            status=status.HTTP_200_OK,
-        )
+                return Response(
+                    {"message": "Approval cost calculated successfully!",
+                        "context": context},
+                    status=status.HTTP_200_OK,
+                )
+            # handle errors correctly
     else:
         return Response(
             {"error": "Invalid request method"},
