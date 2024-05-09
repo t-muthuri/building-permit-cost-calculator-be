@@ -70,7 +70,7 @@ def calculate_cost(request):
                 }
 
                 return Response(
-                    {"message": "Approval cost calculated successfully!",
+                    {"message": "Buildling permit cost calculated successfully!",
                         "context": context},
                     status=status.HTTP_200_OK,
                 )
