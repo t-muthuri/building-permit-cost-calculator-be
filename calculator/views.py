@@ -65,8 +65,8 @@ def calculate_cost(request):
                     building_permit_cost = arch_building_cost + application_form + site_board
 
                 context = {
-                    'architectural plans cost': int(arch_building_cost),
-                    'total estimated cost for a building permit': int(building_permit_cost),
+                    'arch_building_cost': int(arch_building_cost),
+                    'building_permit_cost': int(building_permit_cost),
                 }
 
                 return Response(
