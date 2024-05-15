@@ -120,9 +120,9 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
-        for county_no, county_data in county_data.items():
+        for county_no, county_dataset in county_data.items():
 
-            county_name = list(county_data.keys())[0]
+            county_name = list(county_dataset.keys())[0]
             County.objects.create(county_no=int(
                 county_no), county_name=county_name)
         self.stdout.write(self.style.SUCCESS(

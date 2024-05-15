@@ -59,6 +59,8 @@ MySQL db
 
 ### `python manage.py populate_counties`
 
+### `python manage.py populate_project_types`
+
 ### `python manage.py migrate <Django app name> zero`
 Rollback migrations.\
 Replace with the actual name of the Django app
