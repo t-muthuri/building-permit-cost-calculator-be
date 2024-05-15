@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'calculator',
     'rest_framework_simplejwt',
     'djoser',
+    'oauth2_provider',
 ]
 
 MIDDLEWARE = [
@@ -97,9 +98,9 @@ DATABASES = {
         'NAME': 'approvals', # name of db we want to use
         'USER': 'root', # db admin
         'PASSWORD': 'admin2024', 
-        'HOST': '127.0.0.1',
+        # 'HOST': '127.0.0.1',
         # 'PASSWORD': 'password', 
-        # 'HOST': 'localhost',
+        'HOST': 'localhost',
         'PORT':'3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
@@ -110,7 +111,7 @@ DATABASES = {
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'brianmwangitestuser@gmail.com'
+EMAIL_HOST_USER = 'bryanmwangitestuser2@gmail.com'
 EMAIL_HOST_PASSWORD = 'testuser24'
 EMAIL_USE_TLS = True
 
@@ -182,8 +183,8 @@ DJOSER = {
     'ACTIVATION_URL': 'activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': True,
     'SERIALIZERS': {
-        'user_create': 'accounts.serializers.UserCreateSerializer',
-        'user' : 'accounts.serializers.UserCreateSerializer',
+        'user_create': 'authorization.serializers.UserCreateSerializer',
+        'user' : 'authorization.serializers.UserCreateSerializer',  
         'user_delete': 'djoser.serializers.UserDeleteSerializer',
     }
     

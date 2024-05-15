@@ -63,6 +63,9 @@ MySQL db
 Rollback migrations.\
 Replace with the actual name of the Django app
 
+### `python manage.py flush`
+Remove all data from the database and re-exectes any post-synchronization handlers
+
 
 # How to set up the application
 
