@@ -66,7 +66,7 @@ Rollback migrations.\
 Replace with the actual name of the Django app
 
 ### `python manage.py flush`
-Remove all data from the database and re-exectes any post-synchronization handlers
+Remove all data from the database and re-executes any post-synchronization handlers
 
 
 # How to set up the application
@@ -121,6 +121,9 @@ Run the application
 # To research on
 * [] setting up mysql and django
 * [] what is jazzmin
+
+# To investigate / refine
+The cost of production and the size of the project should be a positive integer. The data should not accept any negative integers.
 
 # Notes
 [Setting up Docker and CircleCI](https://circleci.com/blog/continuous-integration-for-django-projects/)
