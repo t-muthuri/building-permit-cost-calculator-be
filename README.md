@@ -93,6 +93,7 @@ Run the application
 * [] Scrape building construction articles (AAK, NCA)
 * [] Upload documents for approval
 * [] Materials cost calculator
+    * [] Build a contributions' visualization tool - contribution graphs gamify a task or process
 
 # Usage
 
