@@ -89,24 +89,27 @@ Run the application
 
 # Features
 
-* [] Approvals cost calculator
+* [x] Approvals cost calculator
 * [] Scrape building construction articles (AAK, NCA)
-* [] Upload documents for approval
+* [x] Upload documents for approval
 * [] Materials cost calculator
     * [] Build a contributions' visualization tool - contribution graphs gamify a task or process
 
 # Usage
 
 # To do
-* [] Authorization - two users (client, the county approver)
+* [] Authorization - two users:
+    * [x] client, 
+    * [] the county approver
 * [] Models - related to uploading documents for approval feature
+    * [] Upload multiple files
 * [x] Set up the backend
 * [x] Set up MySQL db ... confirm
 * [] Set up circleci for tracking changes and deploying
 * [x] Set up formatter for a homogenous code syntax - using autopep 8 extension atm
 * [] Set up files for formatting the code syntax
 * [x] Calculate the cost of approvals in Nairobi county for a residential unit
-* [] use the county data to calculate cost of approvals successfully (rough estimate)
+* [x] use the county data to calculate cost of approvals successfully (rough estimate)
 * [] set up an automated build server - research on how to do this first
 * [] Estimate the cost of materials needed for a simple one bedroom house in Kenya - post the quantities with estimated prices (table)
 * [] thoroughly research on how you have populated the counties and project types and prices
