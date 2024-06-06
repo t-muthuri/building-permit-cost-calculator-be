@@ -57,6 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# allow reactjs app to consume django rest apis
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ORIGIN_WHITELIST = (
@@ -94,13 +95,13 @@ WSGI_APPLICATION = 'approvals.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'approvals', # name of db we want to use
-        'USER': 'root', # db admin
-        'PASSWORD': 'admin2024', 
+        'NAME': 'approvals',  # name of db we want to use
+        'USER': 'root',  # db admin
+        'PASSWORD': 'admin2024',
         # 'HOST': '127.0.0.1',
-        # 'PASSWORD': 'password', 
+        # 'PASSWORD': 'password',
         'HOST': 'localhost',
-        'PORT':'3306',
+        'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         }
@@ -142,6 +143,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -170,10 +172,10 @@ DJOSER = {
     'SEND_ACTIVATION_EMAIL': False,
     'SERIALIZERS': {
         'user_create': 'authorization.serializers.UserCreateSerializer',
-        'user' : 'authorization.serializers.UserCreateSerializer',  
+        'user': 'authorization.serializers.UserCreateSerializer',
         'user_delete': 'djoser.serializers.UserDeleteSerializer',
     }
-    
+
 }
 
 AUTH_USER_MODEL = 'authorization.UserAccount'

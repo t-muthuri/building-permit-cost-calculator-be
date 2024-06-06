@@ -7,5 +7,6 @@ router = DefaultRouter()
 router.register('files', FilesViewSet, basename='files')
 
 urlpatterns = [
+    path('admin', admin.site.urls),
     path('api/upload/', include(router.urls)),
 ]
