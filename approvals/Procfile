@@ -1,1 +1,1 @@
-web: gunicorn 'approvals.wsgi'
+web: gunicorn --worker-tmp-dir /dev/shm approvals.wsgi:application
