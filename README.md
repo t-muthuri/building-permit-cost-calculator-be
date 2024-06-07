@@ -7,16 +7,32 @@ Building plans approval application with ReactJs and Python
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [building-plans-approvals-be](#building-plans-approvals-be)
-- [table of contents](#table-of-contents)
-- [about](#about)
-- [prerequisites](#prerequisites)
-- [project structure](#project-structure)
-- [available scripts](#available-scripts)
-- [how to set up the application](#how-to-set-up-the-application)
-- [features](#features)
-- [usage](#usage)
-- [authors](#authors)
+- [About](#about)
+- [Prerequisites](#prerequisites)
+- [Project structure](#project-structure)
+- [Available scripts](#available-scripts)
+    - [`mysql -u root -p`](#mysql--u-root--p)
+    - [`python manage.py makemigrations`](#python-managepy-makemigrations)
+    - [`python manage.py migrate`](#python-managepy-migrate)
+    - [`python manage.py populate_counties`](#python-managepy-populate_counties)
+    - [`python manage.py populate_project_types`](#python-managepy-populate_project_types)
+    - [`python manage.py migrate <Django app name> zero`](#python-managepy-migrate-django-app-name-zero)
+    - [`python manage.py flush`](#python-managepy-flush)
+- [How to set up the application](#how-to-set-up-the-application)
+    - [`git clone url`](#git-clone-url)
+    - [`source venv/bin/activate`](#source-venvbinactivate)
+    - [`pip install -r requirements.txt`](#pip-install--r-requirementstxt)
+    - [`python manage.py runserver`](#python-managepy-runserver)
+- [Dependencies](#dependencies)
+- [Features](#features)
+- [Usage](#usage)
+- [To do](#to-do)
+- [To research on](#to-research-on)
+- [To investigate / refine](#to-investigate--refine)
+- [Notes](#notes)
+- [References](#references)
+- [Overview of the project](#overview-of-the-project)
+- [Authors](#authors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -29,26 +45,18 @@ MySQL db
 # Project structure
 ```
 └── 📁building-plans-approvals-be
+    └── .gitignore
     └── LICENSE
-    └── PROJECT.md
     └── README.md
     └── 📁approvals
-        └── __init__.py
-        └── 📁__pycache__
-            └── ...
-        └── asgi.py
-        └── settings.py
-        └── urls.py
-        └── wsgi.py
     └── 📁authorization
-        └── ...
-    └── 📁calc
-        └── ...
+    └── 📁calculator
     └── db.sqlite3
     └── manage.py
+    └── 📁media
     └── requirements.txt
-    └── 📁venv
-        └── ...
+    └── 📁static
+    └── 📁upload
 ```
 
 # Available scripts
