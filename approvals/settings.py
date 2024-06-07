@@ -90,8 +90,6 @@ DATABASES = {
         'NAME': 'approvals',  # name of db we want to use
         'USER': 'root',  # db admin
         'PASSWORD': str(os.getenv('DB_PASSWORD')),
-        # 'HOST': '127.0.0.1',
-        # 'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {
