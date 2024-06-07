@@ -1,5 +1,8 @@
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+# load the configs from .env
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -9,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-vf$4&fv5we5&xe0ty+=*!fi*n+gx&6qre*#b0l_f$k(fxxpcw='
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -86,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'approvals',  # name of db we want to use
         'USER': 'root',  # db admin
-        'PASSWORD': 'admin2024',
+        'PASSWORD': str(os.getenv('DB_PASSWORD')),
         # 'HOST': '127.0.0.1',
         # 'PASSWORD': 'password',
         'HOST': 'localhost',
