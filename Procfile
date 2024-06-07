@@ -1,1 +1,1 @@
-web: gunicorn 'approvals.wsgi'
+web: python manage.py migrate && gunicorn approvals.wsgi
