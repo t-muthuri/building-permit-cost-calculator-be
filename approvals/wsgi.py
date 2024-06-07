@@ -14,3 +14,6 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'approvals.settings')
 
 application = get_wsgi_application()
+
+# bridge the connection and connect to django app on vercel
+app = application
