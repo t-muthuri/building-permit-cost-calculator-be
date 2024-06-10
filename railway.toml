@@ -1,8 +1,0 @@
-[build]
-builder = "Docker"
-
-[deploy]
-dockerfile = "Dockerfile"
-
-[start]
-command = "gunicorn approvals.wsgi:application"
