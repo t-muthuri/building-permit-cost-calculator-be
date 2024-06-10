@@ -1,1 +1,1 @@
-web: gunicorn --worker-tmp-dir /dev/shm approvals.wsgi:application
+web: python manage.py migrate && gunicorn approvals.wsgi
