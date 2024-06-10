@@ -20,7 +20,7 @@ RUN python -m venv /opt/venv && \
     /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
 
 # Verify gunicorn installation
-RUN /opt/venv/bin/pip show gunicorn && /opt/venv/bin/gunicorn --version
+RUN /opt/venv/bin/pip show gunicorn
 
 # Copy the rest of the application code
 COPY . .
