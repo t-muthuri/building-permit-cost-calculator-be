@@ -1,2 +1,5 @@
 [build]
 builder = "Docker"
+
+[deploy]
+dockerfile = "Dockerfile"
