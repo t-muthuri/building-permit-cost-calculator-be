@@ -44,7 +44,7 @@ gunicorn==22.0.0
 # MarkupSafe==2.0.1
 # monotonic==1.6
 # more-itertools==8.10.0
-mysqlclient==2.2.4
+# mysqlclient==2.2.4
 # netifaces==0.11.0
 # oauthlib==3.2.0
 # olefile==0.46
@@ -59,7 +59,7 @@ mysqlclient==2.2.4
 # PyGObject==3.42.1
 # PyJWT==2.8.0
 # pymacaroons==0.13.0
-# PyMySQL==1.0.2
+PyMySQL==1.0.2
 # PyNaCl==1.5.0
 # pyparsing==2.4.7
 # pyRFC3339==1.1
