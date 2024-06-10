@@ -1,10 +1,8 @@
 import os
-import pymysql
 from pathlib import Path
 from dotenv import load_dotenv
 # load the configs from .env
 load_dotenv()
-pymysql.install_as_MySQLdb()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -85,40 +83,25 @@ WSGI_APPLICATION = 'approvals.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'approvals',  # name of db we want to use
-#         'USER': 'root',  # db admin
-#         'PASSWORD': str(os.getenv('DB_PASSWORD')),
-#         'HOST': '127.0.0.1',
-#         'PORT': '3306',
-#         'OPTIONS': {
-#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-#         }
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'approvals',  # name of db we want to use
+        'USER': 'root',  # db admin
+        'PASSWORD': str(os.getenv('DB_PASSWORD')),
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
+    }
+}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-# configure to railway
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'railway',  # name of db we want to use
-        'USER': 'root',  # db admin
-        'PASSWORD': str(os.getenv('DB_PASSWORD')),
-        'HOST': 'viaduct.proxy.rlwy.net',
-        'PORT': '59670',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
-    }
-}
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
