@@ -5,4 +5,4 @@ builder = "Docker"
 dockerfile = "Dockerfile"
 
 [start]
-command = "gunicorn --worker-tmp-dir /dev/shm approvals.wsgi:application"
+command = "gunicorn approvals.wsgi:application"
