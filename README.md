@@ -116,6 +116,7 @@ Run the application
 * [x] Set up the backend
 * [x] Set up MySQL db ... confirm
 * [] Set up circleci for tracking changes and deploying
+    * [] use the deployed sample to test the deployment of this app
 * [x] Set up formatter for a homogenous code syntax - using autopep 8 extension atm
 * [] Set up files for formatting the code syntax
 * [x] Calculate the cost of approvals in Nairobi county for a residential unit
