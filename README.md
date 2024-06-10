@@ -92,6 +92,14 @@ Run the application
 * [] Materials cost calculator
     * [] Build a contributions' visualization tool - contribution graphs gamify a task or process
 
+**This project needs to have**
+* [x] A Frontend
+* [] An API
+* [x] Database
+* [] A blog post about what you have built and why.
+* [] Documentation which includes system diagrams, API specs etc.
+* [] Monitoring and Logging (for extra credit)
+
 # Usage
 
 # To do
