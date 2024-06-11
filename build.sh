@@ -6,16 +6,30 @@ set -e
 # Build the project
 echo "Building the project..."
 
-# Make pip available and install dependencies
+# Ensure Python and pip are available
+echo "Ensuring pip is available..."
 python3.9 -m ensurepip --upgrade || true
 python3.9 -m pip install --upgrade pip
-python3.9 -m pip install -r requirements.txt
+
+# Create a virtual environment if it doesn't exist
+if [ ! -d "venv" ]; then
+  echo "Creating virtual environment..."
+  python3.9 -m venv venv
+fi
+
+# Activate the virtual environment
+echo "Activating virtual environment..."
+source venv/bin/activate
+
+# Install dependencies
+echo "Installing dependencies..."
+pip install -r requirements.txt
 
 # Make Migrations and Migrate
-echo "Make Migrations..."
-python3.9 manage.py makemigrations --noinput
-python3.9 manage.py migrate --noinput
+echo "Making Migrations..."
+python manage.py makemigrations --noinput
+python manage.py migrate --noinput
 
 # Collect Static Files
-echo "Collect Static..."
-python3.9 manage.py collectstatic --noinput --clear
+echo "Collecting Static files..."
+python manage.py collectstatic --noinput --clear
