@@ -23,6 +23,7 @@ source venv/bin/activate
 
 # Install dependencies
 echo "Installing dependencies..."
+pip install wheel
 pip install -r requirements.txt
 
 # Make Migrations and Migrate
