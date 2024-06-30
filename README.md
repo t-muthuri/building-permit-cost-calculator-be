@@ -1,6 +1,9 @@
 # Building-plans-approvals-be
 Building plans approval application with ReactJs and Python
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -130,7 +133,14 @@ Run the application
     * [x] Validation logic using serializers
     * [x] Handle errors gracefully 
     * [] implement security measures
-
+* [] Add error handling messages in the ui to create a better client experience
+    * [] ...loading
+    * [] Incorrect clientname / password
+        * [] change username to name
+* [] rewrite this entire code in another be and fe language and redeploy afresh
+    * [] Rust
+    * [] React native
+    * [] Flutter
 
 # To research on
 * [] setting up mysql and django
