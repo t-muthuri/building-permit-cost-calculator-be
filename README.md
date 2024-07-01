@@ -30,7 +30,7 @@ Building plans approval application with ReactJs and Python
 
 # Prerequisites
 Django
-MySQL db
+Postgres db
 
 # Project status
 [x] Deployment status: Hosted on Railway [Approvals APIs](https://approvals-backend-test-production.up.railway.app/)
@@ -101,7 +101,7 @@ Run the application
 **This project needs to have**
 * [x] A Frontend
 * [] An API
-* [] Database
+* [] [Database](https://www.meetgor.com/django-deploy-railway/#google_vignette)
 * [] A blog post about what you have built and why.
 * [] Documentation which includes system diagrams, API specs etc.
 * [] Monitoring and Logging (for extra credit)
