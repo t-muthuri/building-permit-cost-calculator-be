@@ -141,6 +141,8 @@ Run the application
     * [] Rust
     * [] React native
     * [] Flutter
+* [] merge this repo to the initial repo while keeping the commits
+* [] change the name of the files in the hosting sites. Different name from the github repo's name
 
 # To research on
 * [] setting up mysql and django
