@@ -33,7 +33,7 @@ Django
 Postgres db
 
 # Project status
-[x] Deployment status: Hosted on Railway [Approvals APIs](https://approvals-backend-test-production.up.railway.app/)
+[x] Deployment status: Hosted on Railway [Approvals APIs](https://approvals-api.up.railway.app/)
 
 # Project structure
 ```
