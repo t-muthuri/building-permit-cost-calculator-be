@@ -100,8 +100,8 @@ Run the application
 
 **This project needs to have**
 * [x] A Frontend
-* [] An API
-* [] [Database](https://www.meetgor.com/django-deploy-railway/#google_vignette)
+* [x] An (API)[https://approvals-api.up.railway.app/]
+* [x] [Database](https://www.meetgor.com/django-deploy-railway/#google_vignette)
 * [] A blog post about what you have built and why.
 * [] Documentation which includes system diagrams, API specs etc.
 * [] Monitoring and Logging (for extra credit)
@@ -141,8 +141,8 @@ Run the application
     * [] Rust
     * [] React native
     * [] Flutter
-* [] merge this repo to the initial repo while keeping the commits
-* [] change the name of the files in the hosting sites. Different name from the github repo's name
+* [x] merge this repo to the initial repo while keeping the commits
+* [x] change the name of the files in the hosting sites. Different name from the github repo's name
 
 # To research on
 * [] setting up mysql and django
