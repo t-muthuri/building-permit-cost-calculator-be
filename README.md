@@ -1,6 +1,9 @@
 # Building-plans-approvals-be
 Building plans approval application with ReactJs and Python
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -27,7 +30,7 @@ Building plans approval application with ReactJs and Python
 
 # Prerequisites
 Django
-MySQL db
+Postgres db
 
 # Project status
 [x] Deployment status: Hosted on Railway [Approvals APIs](https://approvals-backend-test-production.up.railway.app/)
@@ -98,7 +101,7 @@ Run the application
 **This project needs to have**
 * [x] A Frontend
 * [] An API
-* [x] Database
+* [] [Database](https://www.meetgor.com/django-deploy-railway/#google_vignette)
 * [] A blog post about what you have built and why.
 * [] Documentation which includes system diagrams, API specs etc.
 * [] Monitoring and Logging (for extra credit)
@@ -130,7 +133,16 @@ Run the application
     * [x] Validation logic using serializers
     * [x] Handle errors gracefully 
     * [] implement security measures
-
+* [] Add error handling messages in the ui to create a better client experience
+    * [] ...loading
+    * [] Incorrect clientname / password
+        * [] change username to name
+* [] rewrite this entire code in another be and fe language and redeploy afresh
+    * [] Rust
+    * [] React native
+    * [] Flutter
+* [] merge this repo to the initial repo while keeping the commits
+* [] change the name of the files in the hosting sites. Different name from the github repo's name
 
 # To research on
 * [] setting up mysql and django
