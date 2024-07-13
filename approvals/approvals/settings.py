@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = ["https://building-plans-approvals-fe.vercel.app"]
+CORS_ALLOWED_ORIGINS = ["https://building-plans-approvals-fe.vercel.app", "http://localhost:3000"]
 
 ROOT_URLCONF = 'approvals.urls'
 
