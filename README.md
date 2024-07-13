@@ -88,6 +88,7 @@ Run the application
 
 # Dependencies
 - [django-rest-framework-simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/getting_started.html)
+- [scrapy](https://medium.com/@yasykur_rafii/easy-your-way-to-web-scraping-with-django-and-scrapy-7fac20d27a81)
 *update
 
 
