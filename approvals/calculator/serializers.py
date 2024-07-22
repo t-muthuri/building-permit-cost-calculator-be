@@ -5,11 +5,11 @@ from .models import County, ProjectType
 class CountySerializer(serializers.ModelSerializer):
     class Meta:
         model = County
-        fields = ('county_no', 'county_name')
+        fields = ['county_no', 'county_name']
 
 
 class ProjectTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProjectType
-        fields = ('project_type_name', 'project_type_no')
+        fields = ['project_type_name', 'project_type_no']
         
