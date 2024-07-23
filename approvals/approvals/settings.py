@@ -31,7 +31,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'authorization',
     'calculator',
-    'news',
     'upload',
     'rest_framework',
     'djoser',
