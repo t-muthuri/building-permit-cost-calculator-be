@@ -95,7 +95,6 @@ Run the application
 # Features
 
 * [x] Approvals cost calculator
-* [] Scrape building construction articles (AAK, NCA)
 * [x] Upload documents for approval
 * [] Materials cost calculator
     * [] Build a contributions' visualization tool - contribution graphs gamify a task or process
@@ -111,6 +110,9 @@ Run the application
 # Usage
 
 # To do
+* [] Add a system design to simulate a real life approvals process 
+* [] Calculate and update the costs in real time (as the client updates and fills in the input data).
+    * [] eliminate the need for the submit button
 * [] Authorization - two users:
     * [x] client, 
     * [] the county approver
