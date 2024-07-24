@@ -153,7 +153,7 @@ Run the application
 * [] what is jazzmin
 
 # To investigate / refine
-The cost of production and the size of the project should be a positive integer. The data should not accept any negative integers.
+* [x] <span style='color:green'> The cost of production and the size of the project should be a positive integer. The data should not accept any negative integers - solved in the frontend </span>
 
 # Notes
 [Setting up Docker and CircleCI](https://circleci.com/blog/continuous-integration-for-django-projects/)
