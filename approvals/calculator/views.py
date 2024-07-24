@@ -48,7 +48,7 @@ def calculate_cost(request):
         project_size = request.data.get('size')
         county_name = request.data.get('county')
         project_type_name = request.data.get('projectType')
-        construction_cost = request.data.get('cost')
+        # construction_cost = request.data.get('cost')
 
         for county_no, county_item in county_data.items():
             # Check if the county name exists in the current county_item
