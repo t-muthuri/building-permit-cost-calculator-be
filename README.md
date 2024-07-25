@@ -50,7 +50,7 @@ Building plans approval application with ReactJs and Python
     License fee  – Kshs. 15,000
 
 # Project status
-[x] Deployment status: Hosted on Railway [Approvals APIs](https://approvals-api.up.railway.app/)
+* [x] Deployment status: Hosted on Railway [Approvals APIs](https://approvals-api.up.railway.app/)
 
 # Project structure
 ```
@@ -104,6 +104,7 @@ Run the application
 **`python manage.py migrate`**
 
 **`python manage.py populate_counties`**
+
 **`python manage.py populate_project_types`**
 
 **`python manage.py migrate <Django app name> zero`**
@@ -118,13 +119,6 @@ Remove all data from the database and re-executes any post-synchronization handl
 - [scrapy](https://medium.com/@yasykur_rafii/easy-your-way-to-web-scraping-with-django-and-scrapy-7fac20d27a81)
 *update
 
-# Features
-
-* [x] Approvals cost calculator
-* [x] Upload documents for approval
-* [] Materials cost calculator
-    * [] Build a contributions' visualization tool - contribution graphs gamify a task or process
-
 **This project needs to have**
 * [x] A Frontend
 * [x] An (API)[https://approvals-api.up.railway.app/]
@@ -132,10 +126,6 @@ Remove all data from the database and re-executes any post-synchronization handl
 * [] A blog post about what you have built and why.
 * [] Documentation which includes system diagrams, API specs etc.
 * [] Monitoring and Logging (for extra credit)
-
-# Usage
-
-# Services
 
 # Authors
 
@@ -149,54 +139,9 @@ Remove all data from the database and re-executes any post-synchronization handl
 - website
 - contact information
 
-# To investigate / refine
-* [x] <span style='color:green'> The cost of production and the size of the project should be a positive integer. The data should not accept any negative integers - solved in the frontend </span>
-
-# To do
-* [x] Calculate and update the costs in real time (as the client updates and fills in the input data).
-    * [x] eliminate the need for the submit button
-* [] Authorization - two users:
-    * [x] client, 
-    * [] the county approver
-* [] Models - related to uploading documents for approval feature
-    * [] Upload multiple files
-* [x] Set up the backend
-* [x] Set up MySQL db ... confirm
-* [] Set up circleci for tracking changes and deploying
-    * [x] use the deployed sample to test the deployment of this app
-    * [x] deploy to [Vercel](https://medium.com/@carzam87/how-to-deploy-a-django-app-using-mysql-to-vercel-88850b8abfbe)
-* [x] Set up formatter for a homogenous code syntax - using autopep 8 extension atm
-* [] Set up files for formatting the code syntax
-* [x] Calculate the cost of approvals in Nairobi county for a residential unit
-* [x] use the county data to calculate cost of approvals successfully (rough estimate)
-* [] set up an automated build server - research on how to do this first
-* [] Estimate the cost of materials needed for a simple one bedroom house in Kenya - post the quantities with estimated prices (table)
-* [] thoroughly research on how you have populated the counties and project types and prices
-* [] Post calculator data from the fe
-    * [x] Create django models
-    * [x] Create django views to receive data from the fe (POST)
-    * [x] Restful APIs for react to fetch and modify data
-    * [x] Validation logic using serializers
-    * [x] Handle errors gracefully 
-    * [] implement security measures
-* [] Add error handling messages in the ui to create a better client experience
-    * [] ...loading
-    * [] Incorrect clientname / password
-        * [] change username to name
-* [] rewrite this entire code in another be and fe language and redeploy afresh
-    * [] Rust
-    * [] React native
-    * [] Flutter
-* [x] merge this repo to the initial repo while keeping the commits
-* [x] change the name of the files in the hosting sites. Different name from the github repo's name
-
-# To research on
-* [x] setting up mysql and django
-* [] what is jazzmin
-
 # References
-- [working with mysql db](https://blog.devart.com/mysql-command-line-client.html#How-to-use-MySQL-command-line-client?)
+[working with mysql db](https://blog.devart.com/mysql-command-line-client.html#How-to-use-MySQL-command-line-client?)
 
-**Notes**
 [Setting up Docker and CircleCI](https://circleci.com/blog/continuous-integration-for-django-projects/)
+
 [Connect ReactJs and Django](https://medium.com/@devsumitg/how-to-connect-reactjs-django-framework-c5ba268cb8be)
