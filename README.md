@@ -153,7 +153,6 @@ Remove all data from the database and re-executes any post-synchronization handl
 * [x] <span style='color:green'> The cost of production and the size of the project should be a positive integer. The data should not accept any negative integers - solved in the frontend </span>
 
 # To do
-* [] Add a system design to simulate a real life approvals process 
 * [x] Calculate and update the costs in real time (as the client updates and fills in the input data).
     * [x] eliminate the need for the submit button
 * [] Authorization - two users:
