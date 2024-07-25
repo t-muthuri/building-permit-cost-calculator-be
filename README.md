@@ -114,16 +114,11 @@ Replace with the actual name of the Django app
 **`python manage.py flush`**
 Remove all data from the database and re-executes any post-synchronization handlers
 
-## Dependencies
-- [django-rest-framework-simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/getting_started.html)
-- [scrapy](https://medium.com/@yasykur_rafii/easy-your-way-to-web-scraping-with-django-and-scrapy-7fac20d27a81)
-*update
-
 **This project needs to have**
 * [x] A Frontend
 * [x] An (API)[https://approvals-api.up.railway.app/]
 * [x] [Database](https://www.meetgor.com/django-deploy-railway/#google_vignette)
-* [] A blog post about what you have built and why.
+* [] A blog post about what is built and why.
 * [] Documentation which includes system diagrams, API specs etc.
 * [] Monitoring and Logging (for extra credit)
 
