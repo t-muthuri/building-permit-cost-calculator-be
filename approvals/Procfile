@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: ./start.sh
+web: gunicorn approvals.wsgi --bind 0.0.0.0:$PORT --log-level info
