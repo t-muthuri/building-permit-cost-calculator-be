@@ -18,7 +18,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['*', 'approvals-api.up.railway.app']
+ALLOWED_HOSTS = ['*', 'approvals-api.up.railway.app', '127.0.0.1','localhost']
 
 
 # Application definition
@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = ['https://building-plans-approvals-fe.vercel.app', 'http://localhost:3000']
+CORS_ALLOWED_ORIGINS = ['https://building-plans-approvals-fe.vercel.app', , 'http://127.0.0.1:3000', 'http://localhost:3000']
 
 CORS_ALLOW_CREDENTIALS = True
 
