@@ -18,7 +18,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ["approvals-api.up.railway.app"]
+ALLOWED_HOSTS = ['*', 'approvals-api.up.railway.app']
 
 
 # Application definition
