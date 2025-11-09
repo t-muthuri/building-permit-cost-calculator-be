@@ -1,8 +1,10 @@
-[build]
-builder = "Docker"
+# railway.toml
 
-[deploy]
+[build]
 dockerfile = "Dockerfile"
 
-[start]
-command = "gunicorn --worker-tmp-dir /dev/shm approvals.wsgi:application"
+[deploy]
+startCommand = "gunicorn approvals.wsgi:application --bind 0.0.0.0:$PORT"
+
+[env]
+DJANGO_SETTINGS_MODULE = "approvals.settings"
