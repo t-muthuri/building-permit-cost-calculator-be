@@ -54,7 +54,7 @@ Building plans approval application with ReactJs and Python
     License fee  – Kshs. 15,000
 
 # Project status
-* [x] Deployment status: Hosted on Railway [Approvals APIs](https://approvals-api.up.railway.app/)
+* [x] Deployment status: Hosted on Railway [Approvals APIs](https://building-permit-cost-calculator-be-production.up.railway.app/)
 
 # Project structure
 ```
@@ -120,7 +120,7 @@ Remove all data from the database and re-executes any post-synchronization handl
 
 **This project needs to have**
 * [x] A Frontend
-* [x] An (API)[https://approvals-api.up.railway.app/]
+* [x] An (API)[https://building-permit-cost-calculator-be-production.up.railway.app/]
 * [x] [Database](https://www.meetgor.com/django-deploy-railway/#google_vignette)
 * [] A blog post about what is built and why.
 * [] Documentation which includes system diagrams, API specs etc.
